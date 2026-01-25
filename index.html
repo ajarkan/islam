@@ -95,19 +95,19 @@
             max-width: none !important;
         }
 
-        /* KHUSUS LOGO PARTNER: FIX AGAR MUAT 2 DI MOBILE */
+        /* KHUSUS LOGO PARTNER: SEIMBANG (TIDAK KEKECILAN, TIDAK KEBESARAN) */
         #landing-wrapper .partner-logo {
-            height: 35px !important; /* Tinggi di Mobile diperkecil */
+            height: 42px !important; /* Mobile: 42px (Pas untuk 2-2.5 logo per layar) */
             width: auto !important;
-            max-width: 140px !important; /* Batasi lebarnya agar tidak makan tempat */
+            max-width: 160px !important; /* Batas lebar agar logo panjang aman */
             object-fit: contain !important;
         }
         
         /* Media query untuk desktop */
         @media (min-width: 768px) {
              #landing-wrapper .partner-logo {
-                height: 45px !important; /* Desktop sedikit lebih besar */
-                max-width: 180px !important;
+                height: 55px !important; /* Desktop: 55px (Jelas terlihat) */
+                max-width: 200px !important;
             }
         }
 
@@ -460,7 +460,7 @@
             <div class="max-w-7xl mx-auto px-4 text-center">
                 <p class="text-sm text-gray-400 font-semibold uppercase tracking-widest mb-6">Partner & Metode Pendidikan</p>
                 <!-- PARTNER LOGO CONTAINER: flex-nowrap + overflow-x-auto + no-scrollbar = GESER KANAN KIRI -->
-                <div class="no-scrollbar flex flex-nowrap justify-between md:justify-center items-center gap-4 md:gap-12 overflow-x-auto pb-4 md:pb-0 grayscale hover:grayscale-0 transition duration-500">
+                <div class="no-scrollbar flex flex-nowrap justify-between md:justify-center items-center gap-8 md:gap-12 overflow-x-auto pb-4 md:pb-0 grayscale hover:grayscale-0 transition duration-500">
                     <!-- Partner 1 -->
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 1" class="partner-logo object-contain shrink-0">
                     
