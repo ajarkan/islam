@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas Belajar - Belajar Islam Online & Offline</title>
+    <title>Madrasah Ilmi - Belajar Islam Online & Offline</title>
     
     <!-- META TAGS KHUSUS WHATSAPP & SOSMED -->
     <meta property="og:title" content="Kelas Belajar - Belajar Islam Online & Offline">
@@ -95,17 +95,19 @@
             max-width: none !important;
         }
 
-        /* KHUSUS LOGO PARTNER: Agar muat 4 sebaris */
+        /* KHUSUS LOGO PARTNER: FIX AGAR MUAT 2 DI MOBILE */
         #landing-wrapper .partner-logo {
-            height: 40px !important; /* Perkecil sedikit agar muat di mobile */
+            height: 35px !important; /* Tinggi di Mobile diperkecil */
             width: auto !important;
-            max-width: 100% !important;
+            max-width: 140px !important; /* Batasi lebarnya agar tidak makan tempat */
+            object-fit: contain !important;
         }
         
-        /* Media query untuk tablet/desktop logo partner bisa lebih besar */
+        /* Media query untuk desktop */
         @media (min-width: 768px) {
              #landing-wrapper .partner-logo {
-                height: 50px !important;
+                height: 45px !important; /* Desktop sedikit lebih besar */
+                max-width: 180px !important;
             }
         }
 
@@ -116,16 +118,16 @@
             object-fit: cover;
         }
         
-        /* Footer Specific Reset - DIPERKECIL SESUAI REQUEST (TAPI TIDAK KEKECILAN) */
+        /* Footer Specific Reset */
         #landing-wrapper footer p, 
         #landing-wrapper footer a, 
         #landing-wrapper footer li {
-            font-size: 13px !important; /* Ukuran pas untuk footer */
+            font-size: 13px !important; 
             line-height: 1.6 !important;
         }
         
         #landing-wrapper footer h4 {
-            font-size: 16px !important; /* Ukuran judul footer */
+            font-size: 16px !important;
             margin-bottom: 1rem !important;
         }
         
@@ -182,9 +184,9 @@
                     <a href="#benefits" onclick="showLandingPage()" class="text-gray-600 hover:text-emerald-600 font-medium transition text-base">Manfaat</a>
                     <a href="#classes" onclick="showLandingPage()" class="text-gray-600 hover:text-emerald-600 font-medium transition text-base">Program Kelas</a>
                     <a href="#testimonials" onclick="showLandingPage()" class="text-gray-600 hover:text-emerald-600 font-medium transition text-base">Testimoni</a>
-                    <!-- Tombol Daftar Sekarang (Link Biasa - Tab Baru) -->
-                    <a href="https://kampoengquran.or.id/kbi/" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full font-medium transition shadow-lg shadow-emerald-600/20 transform hover:-translate-y-0.5 text-base">
-                       Cek Jadwal Kosong
+                    <!-- Tombol Cek Jadwal Kosong (Link Biasa - Tab Baru) -->
+                    <a href="https://kampoengquran.or.id/kbi/" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full font-medium transition shadow-lg shadow-emerald-600/20 transform hover:-translate-y-0.5">
+                        Cek Jadwal Kosong
                     </a>
                 </div>
 
@@ -204,20 +206,21 @@
                 <a href="#benefits" onclick="toggleMobileMenu(); showLandingPage()" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Manfaat</a>
                 <a href="#classes" onclick="toggleMobileMenu(); showLandingPage()" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Program Kelas</a>
                 <a href="#testimonials" onclick="toggleMobileMenu(); showLandingPage()" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Testimoni</a>
-                <!-- Tombol Daftar Sekarang Mobile (Link Biasa - Tab Baru) -->
-                <a href="https://kampoengquran.or.id/kbi/" target="_blank" rel="noopener noreferrer" onclick="toggleMobileMenu()" class="block w-full text-center mt-4 bg-emerald-600 text-white px-4 py-3 rounded-lg font-bold text-base">Cek Jadwal Kosong</a>
+                <!-- Tombol Cek Jadwal Kosong Mobile (Link Biasa - Tab Baru) -->
+                <a href="https://kampoengquran.or.id/kbi/" target="_blank" rel="noopener noreferrer" onclick="toggleMobileMenu()" class="block w-full text-center mt-4 bg-emerald-600 text-white px-4 py-3 rounded-lg font-bold">Cek Jadwal Kosong</a>
             </div>
         </div>
     </nav>
 
-    <!-- MAIN CONTENT CONTAINER -->
+    <!-- MAIN CONTENT CONTAINER (Switchable) -->
     <main id="main-content" class="pt-20">
         
-        <!-- SECTION: HERO -->
+        <!-- SECTION: HERO (Headline + Page Fold) -->
         <section id="home" class="relative bg-white overflow-hidden">
             <div class="absolute inset-y-0 right-0 w-1/2 bg-emerald-50 rounded-l-[50px] hidden lg:block"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pt-12 pb-20 lg:pt-24 lg:pb-32">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Text Content -->
                     <div class="text-center lg:text-left slide-up">
                         <span class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-6">
                             <i class="fas fa-star text-gold-500 mr-1"></i> Telah diikuti 1,000+ Santri
@@ -239,6 +242,7 @@
                             </button>
                         </div>
                         
+                        <!-- Trust Elements (Mini) -->
                         <div class="mt-10 pt-8 border-t border-gray-100 flex items-center justify-center lg:justify-start gap-6 text-gray-400 grayscale opacity-70">
                             <i class="fab fa-youtube text-3xl hover:grayscale-0 hover:text-red-600 transition"></i>
                             <i class="fab fa-instagram text-3xl hover:grayscale-0 hover:text-pink-600 transition"></i>
@@ -247,8 +251,11 @@
                         </div>
                     </div>
 
+                    <!-- Image / Video Placeholder -->
                     <div class="relative lg:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl group cursor-pointer" onclick="openVideoModal()">
+                        <!-- Fallback Image -->
                         <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=2070&auto=format&fit=crop" alt="Suasana Belajar" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <!-- Overlay -->
                         <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition flex items-center justify-center">
                             <div class="bg-white/20 backdrop-blur-sm p-4 rounded-full play-btn">
                                 <div class="bg-white text-emerald-600 w-16 h-16 rounded-full flex items-center justify-center pl-1 shadow-lg">
@@ -285,6 +292,7 @@
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Benefit 1 -->
                     <div class="bg-emerald-800/50 p-8 rounded-2xl border border-emerald-700 hover:bg-emerald-800 transition">
                         <div class="w-14 h-14 bg-gold-500 rounded-lg flex items-center justify-center mb-6 text-emerald-900 text-2xl">
                             <i class="fas fa-certificate"></i>
@@ -292,6 +300,7 @@
                         <h3 class="text-xl font-bold mb-3">Bersanad & Tersertifikasi</h3>
                         <p class="text-emerald-200 leading-relaxed">Pengajar hafiz/hafizah bersanad yang memiliki kompetensi tinggi dalam bidangnya.</p>
                     </div>
+                    <!-- Benefit 2 -->
                     <div class="bg-emerald-800/50 p-8 rounded-2xl border border-emerald-700 hover:bg-emerald-800 transition">
                         <div class="w-14 h-14 bg-gold-500 rounded-lg flex items-center justify-center mb-6 text-emerald-900 text-2xl">
                             <i class="fas fa-clock"></i>
@@ -299,6 +308,7 @@
                         <h3 class="text-xl font-bold mb-3">Waktu Fleksibel</h3>
                         <p class="text-emerald-200 leading-relaxed">Pilih jadwal belajar Online (Zoom) atau Offline sesuai dengan kesibukan Anda.</p>
                     </div>
+                    <!-- Benefit 3 -->
                     <div class="bg-emerald-800/50 p-8 rounded-2xl border border-emerald-700 hover:bg-emerald-800 transition">
                         <div class="w-14 h-14 bg-gold-500 rounded-lg flex items-center justify-center mb-6 text-emerald-900 text-2xl">
                             <i class="fas fa-book-open"></i>
@@ -450,18 +460,18 @@
             <div class="max-w-7xl mx-auto px-4 text-center">
                 <p class="text-sm text-gray-400 font-semibold uppercase tracking-widest mb-6">Partner & Metode Pendidikan</p>
                 <!-- PARTNER LOGO CONTAINER: flex-nowrap + overflow-x-auto + no-scrollbar = GESER KANAN KIRI -->
-                <div class="no-scrollbar flex flex-nowrap justify-between md:justify-center items-center gap-6 md:gap-12 overflow-x-auto pb-4 md:pb-0 grayscale hover:grayscale-0 transition duration-500">
+                <div class="no-scrollbar flex flex-nowrap justify-between md:justify-center items-center gap-4 md:gap-12 overflow-x-auto pb-4 md:pb-0 grayscale hover:grayscale-0 transition duration-500">
                     <!-- Partner 1 -->
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 1" class="h-10 md:h-12 w-auto object-contain shrink-0">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 1" class="partner-logo object-contain shrink-0">
                     
                     <!-- Partner 2 -->
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 2" class="h-10 md:h-12 w-auto object-contain shrink-0">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 2" class="partner-logo object-contain shrink-0">
                     
                     <!-- Partner 3 -->
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 3" class="h-10 md:h-12 w-auto object-contain shrink-0">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 3" class="partner-logo object-contain shrink-0">
                     
                     <!-- Partner 4 -->
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 4" class="h-10 md:h-12 w-auto object-contain shrink-0">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Partner 4" class="partner-logo object-contain shrink-0">
                 </div>
             </div>
         </section>
@@ -1020,5 +1030,6 @@
         }
 
     </script>
+</div> <!-- PENUTUP WRAPPER PELINDUNG -->
 </body>
 </html>
