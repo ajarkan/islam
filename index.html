@@ -74,6 +74,13 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
+		/* KHUSUS LOGO PARTNER: SEIMBANG (TIDAK KEKECILAN, TIDAK KEBESARAN) */
+        #landing-wrapper .partner-logo {
+            height: 42px !important; /* Mobile: 42px (Pas untuk 2-2.5 logo per layar) */
+            width: auto !important;
+            max-width: 160px !important; /* Batas lebar agar logo panjang aman */
+            object-fit: contain !important;
+		
         /* Gallery / Carousel Hide Scrollbar */
         .scrollbar-hide::-webkit-scrollbar { display: none; }
         .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
@@ -111,7 +118,7 @@
                     <a href="#gallery" onclick="showLandingPage()" class="text-gray-600 hover:text-emerald-600 font-medium transition">Galeri</a>
                     <a href="#testimonials" onclick="showLandingPage()" class="text-gray-600 hover:text-emerald-600 font-medium transition">Testimoni</a>
                     <!-- Tombol Cek Jadwal (Link Biasa) -->
-                    <a href="https://ajarkan.github.io/jadwal/" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full font-medium transition shadow-lg shadow-emerald-600/20 transform hover:-translate-y-0.5">
+                    <a href="https://kampoengquran.or.id/kbi/" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full font-medium transition shadow-lg shadow-emerald-600/20 transform hover:-translate-y-0.5">
                         Cek Jadwal
                     </a>
                 </div>
@@ -132,7 +139,7 @@
                 <a href="#gallery" onclick="toggleMobileMenu(); showLandingPage()" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Galeri</a>
                 <a href="#testimonials" onclick="toggleMobileMenu(); showLandingPage()" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Testimoni</a>
                 <!-- Tombol Cek Jadwal Mobile (Link Biasa) -->
-                <a href="https://ajarkan.github.io/jadwal/" target="_blank" rel="noopener noreferrer" onclick="toggleMobileMenu()" class="block w-full text-center mt-4 bg-emerald-600 text-white px-4 py-3 rounded-lg font-bold">Cek Jadwal</a>
+                <a href="https://kampoengquran.or.id/kbi/" target="_blank" rel="noopener noreferrer" onclick="toggleMobileMenu()" class="block w-full text-center mt-4 bg-emerald-600 text-white px-4 py-3 rounded-lg font-bold">Cek Jadwal Kosong</a>
             </div>
         </div>
     </nav>
@@ -466,7 +473,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8 mb-12">
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center mb-4">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOeglhqO63pFW3bNE5nGqhg0s24gs7n65dJ7Jap4F4TTGRJi1lLGj753ErVMW1oS7SIPAbIzkAM9KT3EXbdlksCVGGLOrtGl8YeSsmQ-NsoHQ2YZiSWMxu_61IB_icBor97xDEieIgN0Iq3z-S8IXMi=w435-h100-s-no-gm?authuser=0" alt="Logo Footer" class="h-12 w-auto object-contain mr-2">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNCfFMdcxnvfuMuUryRFX8nrQIpzR1t8J_GXyhW4yplRI0hrorI6Db9oAqGlkBrdR6Ukm60HDOnBpuOq6Jmtmfkcj1O-bVKfj60ZQuygNwobasTRUWQr5Csdfd3LTs6mhumX336i3IWwEc-eG2c3-bS=w435-h100-s-no-gm?authuser=0" alt="Logo Footer" class="h-12 w-auto object-contain mr-2">
                 </div>
                 <p class="text-emerald-200/80 mb-6 max-w-sm">Membantu umat Islam mempelajari agama dengan manhaj yang benar, mudah, dan terstruktur.</p>
             </div>
@@ -496,7 +503,7 @@
     <!-- WIDGETS & MODALS -->
     
     <!-- WHATSAPP WIDGET -->
-    <div id="wa-widget" class="fixed bottom-6 right-6 z-[50] font-sans flex flex-col items-end gap-2">
+    <div id="wa-widget" class="fixed bottom-6 right-6 z-[80] font-sans flex flex-col items-end gap-2">
         <div id="wa-chat-box" class="hidden bg-white rounded-xl shadow-2xl w-80 mb-2 overflow-hidden transform origin-bottom-right transition-all duration-300 border border-gray-100">
             <div class="bg-emerald-600 p-4 text-white flex items-center shadow-md">
                 <div class="relative mr-3">
